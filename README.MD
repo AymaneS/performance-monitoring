@@ -8,14 +8,14 @@ This program was developed for Mac OS and Linux.
 It was tested on Windows and should work minus one feature.
 
 # Table of Contents
-* [Performance Monitoring](#Performance Monitoring)
-* [Configuration](#Configuration)
-* [Installation](#Installation)
-  * [Simple Usage](#Simple Usage)
-  * [Test and Modifications](#Test and Modifications)
-* [Running the program](#Running the program)
-* [Testing Alert Logic](#Testing Alert Logic)
-* [Project Design and Limitations](#Project Design and Limitations)
+* [Performance Monitoring](#performance-monitoring)
+* [Configuration](#configuration)
+* [Installation](#installation)
+  * [Simple Usage](#simple-usage)
+  * [Test and Modifications](#test-and-modifications)
+* [Running the program](#running-the-program)
+* [Testing Alert Logic](#testing-alert-logic)
+* [Project Design and Limitations](#project-design-and-limitations)
 
 # Configuration
 A "config" file is provided in the performance-monitoring directory. It is critical that you follow the pre-existing template.
