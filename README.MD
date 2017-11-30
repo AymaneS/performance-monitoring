@@ -1,13 +1,23 @@
-# Intro
-----------------------------------------------------
+
+
+# Performance Monitoring
 This program allows you to monitor the performance and availability of any website.
 The intent of this project is to be lightweight and require very little installation.
 
 This program was developed for Mac OS and Linux.
 It was tested on Windows and should work minus one feature.
 
+# Table of Contents
+* [Performance Monitoring](#Performance Monitoring)
+* [Configuration](#Configuration)
+* [Installation](#Installation)
+  * [Simple Usage](#Simple Usage)
+  * [Test and Modifications](#Test and Modifications)
+* [Running the program](#Running the program)
+* [Testing Alert Logic](#Testing Alert Logic)
+* [Project Design and Limitations](#Project Design and Limitations)
+
 # Configuration
------------------------------------------------------
 A "config" file is provided in the performance-monitoring directory. It is critical that you follow the pre-existing template.
 The configuration file is already completed to help you understand the formatting. The empty line between each section is necessary.
 
@@ -29,9 +39,7 @@ Only one threshold is allowed.
 
 
 # Installation
------------------------------------------------------
 ## Simple Usage
-------------------------------
 Requirements :
 - Java
 
@@ -45,7 +53,6 @@ If you do not have Java, download the Java Software Development Kit (SDK) from :
 If you do not want to test the alerting system or change the java code, you need nothing else and you can skip to RUNNING THE PROGRAM.
 
 ## Test and Modifications
--------------------------------
 If you want to test or change the java code, you need JUnit.
 Download the latest version of JUnit jar file from http://www.junit.org.
 This project was made using Junit-4.10.jar.
@@ -55,7 +62,6 @@ If you do not know how to set up all of this or have trouble, follow the first 5
 
 
 # Running the program
------------------------------------------------------
 To run this monitor program and every subsequent command, you need to have your terminal open in the performance-monitoring directory.
 You then need to run :
 
@@ -71,15 +77,14 @@ For each website, a folder is created at /data containing 3 files :
 
 Only alerts are displayed on the console (with a corresponding color on MacOS and Linux, not available on Windows), to display the stats you need to open the corresponding Logs_Stats file.
 
-Press CTRL+C to stop the monitoring.
+Press `CTRL+C` to stop the monitoring.
 
-If you have setup JUnit, 'java com/monitor/TestRunner' will make you test the alert logic.
+If you have setup JUnit, `java com/monitor/TestRunner` will make you test the alert logic.
 
 If you changed any java files, you need to run `javac com/monitor/*.java` then the command you want.
 
 
 # Testing Alert Logic
------------------------------------------------------
 The test method launch the alerting method onto files that I have written myself in the testdata folder and know the availability percentage of.
 The boolean isSiteAvailable defines the availability state of the website when the alerting method was launched.
 
@@ -88,7 +93,6 @@ and confirm it works !
 
 
 # Project Design and Limitations
------------------------------------------------------
 As this project was designed to be simple and lightweight, you can't compute efficiently too many websites at once.
 This website is geared towards monitoring <10 websites quickly.
 If you have several websites, I advise to only make one alert thread.
