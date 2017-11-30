@@ -101,9 +101,10 @@ Remember that the number of thread follows this pattern : [numberofwebsites]x[nu
 I recommend to always keep this number under 20 for optimal usage of this program.
 In the optimal case, a request is made every second to each website.
 
-3 java files are working separately : - Alerting.java to alert if necessary the user,
-                                      - CheckAvailability.java to make request and save the data received,
-                                      - DisplayStatistics.java to compute and store some metrics
+3 java files are working separately :
+* Alerting.java to alert if necessary the user,
+* CheckAvailability.java to make request and save the data received,
+* DisplayStatistics.java to compute and store some metrics
 
 PerformanceMonitoring.java is scheduling and running every thread needed based on the config file and the 3 precedent java files.
 I decided to consider the time to make a HEAD request and get back the response code as the response time of the website.
