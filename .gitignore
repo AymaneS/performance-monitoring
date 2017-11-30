@@ -1,0 +1,6 @@
+# Local
+local.properties
+
+# MacOS generated
+.DS_Store
+__MACOSX

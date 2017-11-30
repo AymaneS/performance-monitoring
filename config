@@ -1,0 +1,19 @@
+[websites]
+www.reddit.com
+www.google.com
+www.baidu.com
+www.datadoghq.com
+www.youtube.com
+www.github.com
+www.jetbrains.com
+www.yahoo.com
+
+[stats intervals]
+Interval=10;DisplayRange=600
+Interval=60;DisplayRange=3600
+
+[alerting intervals]
+120
+
+[alerting threshold]
+Threshold=80
